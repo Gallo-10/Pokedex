@@ -7,6 +7,23 @@ The app was made using the pypokedex library to get the pokemon database, Tkinke
 
 
 ## ⚙️How it works
+Basicaly every thig works around a simple funcion that gathers all the info of the pokemon that the user is searching for and converts the sprite given by pypokedex into a image to show it on the app.
+
+```
+def load_pokemon():
+    pokemon = pypokedex.get(name=text_id_name.get(1.0, "end-1c"))
+
+    http = urllib3.PoolManager()
+    response = http.request('GET', pokemon.sprites.front.get('default'))
+    image = PIL.Image.open(BytesIO(response.data))
+
+    img = PIL.ImageTk.PhotoImage(image)
+    pokemon_image.config(image=img)
+    pokemon_image.image = img
+
+    pokemon_information.config(text=f"{pokemon.dex} - {pokemon.name}".title())
+    pokemon_types.config(text=" - ".join([t for t in pokemon.types]).title())
+```
 
 
 ## 📋 How to use
