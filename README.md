@@ -3,11 +3,11 @@ A simple Pokedex made with python.
 
 
 ## 🔧 How it was made
-The app was made using the pypokedex library to get the pokemon database, Tkinker to build it's interface, urllib3 to get the sprites from pypokedex and Pillow with BytesIO to manage these sprites of the pokemon. 
+The app was made using the pypokedex library to get the pokemon's database, Tkinker to build its interface, urllib3 to get the sprites from pypokedex and Pillow with BytesIO to manage these sprites of the pokemon. 
 
 
 ## ⚙️How it works
-Basicaly every thig works around a simple funcion that gathers all the info of the pokemon that the user is searching for and converts the sprite given by pypokedex into a image to show it on the app.
+Basically everythig works around a simple function that gathers all the info about the pokemon the user is searching and converts the sprite given by pypokedex into a image to show on the app.
 
 ```
 def load_pokemon():
@@ -27,4 +27,4 @@ def load_pokemon():
 
 
 ## 📋 How to use
-To use the app insert the ID or the name of the Pokemon and press the button to search it. 
+To use the app insert the ID number or the name of the Pokemon and press the button to search it. 
