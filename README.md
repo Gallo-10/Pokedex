@@ -3,7 +3,7 @@ A simple Pokedex made with python.
 
 
 ## 🔧 How it was made
-The app was made using the pypokedex library to get the pokemon database, Tkinker to build it's interface and Pillow with BytesIO to manage the sprites of the pokemon. 
+The app was made using the pypokedex library to get the pokemon database, Tkinker to build it's interface, urllib3 to get the sprites from pypokedex and Pillow with BytesIO to manage these sprites of the pokemon. 
 
 
 ## ⚙️How it works
